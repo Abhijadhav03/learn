@@ -28,3 +28,28 @@ console.log("hello world");
 }
 
 console.log(typeof bigNumber);
+
+//stack (primitive) ,heap(non primitve) 
+
+//stack - copy, heap = refernce
+
+let myYoutubename = "abhishekjadhav"
+
+let anothername =  myYoutubename
+anothername = "chaiaurcode"
+console.log(anothername);
+console.log(myYoutubename);
+
+
+let userone = { 
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+
+let usertwo = userone
+
+
+usertwo.email = "abhishek@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
